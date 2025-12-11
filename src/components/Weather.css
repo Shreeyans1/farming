@@ -1,0 +1,110 @@
+/* ====== Overall Weather Card ====== */
+.weather {
+    place-self: center;
+    padding: 50px 60px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #d2b48c, #a47551);
+    box-shadow: 0 8px 25px rgba(60, 40, 20, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.weather:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(50, 30, 10, 0.4);
+}
+
+/* ====== Search Bar ====== */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 260px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    background: #fffaf3;
+    color: #5a3e2b;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 10px rgba(165, 118, 81, 0.6);
+}
+
+.search-bar img {
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fffaf3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.search-bar img:hover {
+    background: #f0e0cf;
+    transform: scale(1.1);
+}
+
+/* ====== Weather Info ====== */
+.weather-icon {
+    width: 130px;
+    margin: 25px 0;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+}
+
+.temperature {
+    color: #fdf7f1;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-shadow: 0 3px 10px rgba(90, 60, 30, 0.3);
+}
+
+.location {
+    color: #fff3e0;
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* ====== Additional Data ====== */
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff3e0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.weather-data .col img {
+    width: 28px;
+    filter: brightness(0.9) sepia(0.4);
+}

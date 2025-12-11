@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  background-color: #fff4e2;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(140, 90, 50, 0.15) 3%, transparent 4%),
+    radial-gradient(circle at 75% 75%, rgba(140, 90, 50, 0.15) 3%, transparent 4%);
+  background-size: 60px 60px;
+}
+
+
+
+
+
+
